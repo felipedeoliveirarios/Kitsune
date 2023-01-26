@@ -1,0 +1,10 @@
+<mat-card>
+	<mat-card-header>
+		<mat-card-title>{{ workTitle }}</mat-card-title>
+		<mat-card-subtitle>{{ workAuthor }}</mat-card-subtitle>
+	</mat-card-header>
+	<img mat-card-image [src]="workCoverThumbnail" alt="{{ workCoverAlt }}">
+	<mat-card-actions>
+		<button mat-flat-button [color]="getLastChapterButtonColor()">{{ lastChapterReleased }}</button>
+	</mat-card-actions>
+</mat-card>
